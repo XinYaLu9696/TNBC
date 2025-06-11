@@ -9,7 +9,7 @@ library(RColorBrewer)
 expr_df = read.csv('Expr_tpm_ok.csv', header = T,row.names=1, sep = ',', quote = '', stringsAsFactors = FALSE, check.names = FALSE)  
 meta_df = read.csv('meta_data.csv',row.names=1,header = T,sep = ',',quote = '', check.names = FALSE)
 Expr = as.data.frame(expr_df)
-data = read.table("74_genes.txt")
+data = read.table("genes.txt")
 a = Expr[data$V1,]
 bk = unique(c(seq(-1,1, length=100)))
 aa = pheatmap((a), 
