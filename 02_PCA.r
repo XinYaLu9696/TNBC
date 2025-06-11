@@ -7,6 +7,7 @@ library(ggplot2)
 library(plyr)
 library(ggord)
 library(yyplot)
+library(org.Hs.eg.db)
 
 expr_df = read.csv('ensembl_matrix_TPM.csv', header = T,row.names=1, sep = ',', quote = '', stringsAsFactors = FALSE, check.names = FALSE)  
 meta_df = read.csv('meta_data.csv',row.names=1, header = T,sep = ',',quote = '', check.names = FALSE)
